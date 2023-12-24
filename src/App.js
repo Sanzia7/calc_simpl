@@ -45,7 +45,7 @@ export const App = () => {
 
 		if (isResult) {
 			clear()
-			setIsResult(false)
+			// setIsResult(false)
 		}
 	}
 
