@@ -45,7 +45,6 @@ export const App = () => {
 
 		if (isResult) {
 			clear()
-			// setIsResult(false)
 		}
 	}
 
@@ -76,7 +75,8 @@ export const App = () => {
 						<button
 							className={styles.operand}
 							key={item}
-							onClick={handleClick(item, OPERATOR)}>
+							onClick={handleClick(item, OPERATOR)}
+						>
 							{item}
 						</button>
 					))}
@@ -86,7 +86,8 @@ export const App = () => {
 						<button
 							key={item}
 							className={styles.button}
-							onClick={handleClick(item, NUMBER)}>
+							onClick={handleClick(item, NUMBER)}
+						>
 							{item}
 						</button>
 					))}
