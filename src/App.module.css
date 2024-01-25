@@ -14,22 +14,6 @@
 	color: darkslateblue;
 }
 
-.nums {
-	height: 100px;
-	width: 90%;
-	display: flex;
-
-	display: grid;
-	grid-template-areas:
-		'button button button button button'
-		'button button button button button';
-	gap: 12px;
-	padding-left: 10%;
-}
-
-.operators {
-	height: 120px;
-}
 
 .display {
 	margin: 20px;
@@ -57,6 +41,42 @@
 	color: crimson;
 }
 
+.operators {
+	height: 120px;
+}
+
+
+.operand {
+	height: 70px;
+	width: 70px;
+	margin: 10px;
+	border-radius: 15px;
+	border: none;
+	background-color: orangered;
+	color: azure;
+	font-size: 37px;
+	cursor: pointer;
+}
+
+.operand:hover {
+	background-color: lightgreen;
+	color: darkcyan
+}
+
+.nums {
+	height: 100px;
+	width: 90%;
+	display: flex;
+
+	display: grid;
+	grid-template-areas:
+		'button button button button button'
+		'button button button button button';
+	gap: 12px;
+	padding-left: 10%;
+}
+
+
 .button {
 	height: 60px;
 	width: 60px;
@@ -70,21 +90,4 @@
 .button:hover {
 	background-color: yellow;
 	color: crimson;
-}
-
-.operand {
-	height: 70px;
-	width: 70px;
-	margin: 5px;
-	border-radius: 15px;
-	border: none;
-	background-color: orangered;
-	color: azure;
-	font-size: 37px;
-	cursor: pointer;
-}
-
-.operand:hover {
-	background-color: lightgreen;
-	color: darkcyan
 }

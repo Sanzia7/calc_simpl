@@ -69,7 +69,9 @@ export const App = () => {
 	return (
 		<div className={styles.app}>
 			<div className={styles.container}>
-				<div className={styles.display}>{renderOutput()} </div>
+				<div className={`${styles.display} ${isResult ? styles.outcome : ''}`}>
+					{renderOutput()}
+				</div>
 				<div className={styles.operators}>
 					{OPERATORS.map((item) => (
 						<button
